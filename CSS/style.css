@@ -43,7 +43,7 @@ a {
 }
 
 img {
-    width: 100%;
+    max-width: 100%;
 }
 
 .contenedor {
@@ -69,4 +69,36 @@ h2 {
 
 h3 {
     font-size: 2.4rem;
+}
+
+/** HEADER **/
+.header {
+    display: flex;
+    justify-content: center;
+}
+
+.header__logo {
+    margin: 3rem 0;
+}
+
+/** NAVEGACION **/
+
+.navegacion {
+    background-color: var(--primario-oscuro);
+    padding: 1rem 0;
+    display: flex;
+    justify-content: center;
+    /* el gap agrega la separación entre los elementos*/
+    gap: 2rem;
+}
+
+.navegacion__enlace {
+    font-family: var(--fuente-principal);
+    color: var(--blanco);
+    font-size: 3rem;
+}
+
+.navegacion__enlace--activo,
+.navegacion__enlace:hover {
+    color: var(--secundario);
 }
